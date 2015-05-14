@@ -45,7 +45,10 @@ dd{ margin-left: 15px; }
 .myEmphasis2 { font-weight: bold; 
 				font-size: 1.2em;
 }
-#nav { padding: 20px 5px 5px 20px;
+
+
+
+#nav { padding: 20px 20px 5px 20px;
 		font-weight: bold; 
 		float: left;
 		width: 300px;
@@ -54,7 +57,7 @@ dd{ margin-left: 15px; }
 #nav ul { list-style-type: none;
 		margin: 0;
 		padding-left: 0;
-		font-size: 1.2em;
+		font-size: 1.0em;
 }
 
 #nav a { text-decoration: none; }
@@ -123,7 +126,7 @@ h4 { color: #ffffff;
 			font-style: italic;
 			font-family: Georgia, "Times New Roman", serif; 
 			text-align: center;
-			clear: both;
+			/*clear: both;*/
 			margin-left: auto;
 			margin-right: auto;
 }
@@ -328,17 +331,6 @@ canvas { border: 2px solid #2fa43f;
 				
 				
 				}		
-
-/*#content-right { float: right;
-				text-align: left;
-				 
-				padding: 5px;
-				min-width: 300px;	
-				width: 350px;
-				margin-left:auto;
-				margin-right:auto;
-				width: auto;
-				}*/
 				
 #content-left2 { float: left;
 				text-align: left;
@@ -352,4 +344,68 @@ canvas { border: 2px solid #2fa43f;
 				/*width: 350px; */
 				padding: 1px;
 				width: 40%;
+}
+
+
+
+/*Dropdown navigation area*/
+#nav {
+    font-size: 1em; 
+    width: 220px;
+}
+#nav ul {
+    margin: 0; 
+    padding: 0;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+#nav li {
+    list-style-type: none;
+}
+#nav a {
+    color: #000;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;                  
+    text-decoration: none;
+    width: 100%;
+}
+#nav a:hover{
+    text-decoration: none;
+}
+#nav li:hover {
+    background: #2fa43f;
+    position: relative;
+}
+
+/*Top Level of Navi Area*/ 
+ul.top-level {
+    background-color: #fff;
+}
+ul.top-level li {
+    border-bottom: 1px solid #aaa;
+}
+
+
+/*Second Level of Navi Area*/
+ul.sub-level {
+    display: none;
+}
+li:hover .sub-level {
+    border: 3px solid #aaa;
+    display: block;
+    position: absolute;
+    left: 140px;
+    top: -20px;
+}
+ul.sub-level li {
+    border: none;
+    float: left;
+    width: 90px;
+}
+
+/*Second Level of Navi Area*/
+#nav .sub-level {
+    background-color: #fff;
 }
